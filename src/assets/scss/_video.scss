@@ -1,0 +1,75 @@
+@import "colors";
+@import "mixins";
+@import "commons";
+
+.video-navbar{
+  @extend .codex-nav;
+  background-color: $scheme-color;
+}
+
+.card-img-top {
+  width: auto;
+  height: 140px;
+  object-fit: cover;
+}
+.tags{
+  overflow: hidden;
+  float: left;
+  height: 25px;
+}
+
+.tag{
+  padding: 2px ;
+  font-size: 9px;
+  background-color: $scheme_color ;
+  color: white;
+  border-radius: 7px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.tag-lg{
+  font-size: 15px;
+}
+
+
+.card-name{
+  font-size: 15px;
+  text-overflow: fade;   /* IE, Safari (WebKit) */
+  overflow:hidden;              /* don't show excess chars */
+  white-space:nowrap;           /* force single line */
+}
+
+.card-description{
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.video-rating{
+  float: right;
+}
+
+
+.rounded-lg {
+  @include br(1rem);
+}
+.dropzone {
+  width: 100px;
+  height: 80px;
+  border: 1px dashed #999;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.upload-icon {
+  height: 100px;
+}
+
+.upload-input {
+  position: relative;
+  top: -62px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

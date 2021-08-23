@@ -1,0 +1,20 @@
+@import "mixins";
+
+.codex-nav{
+  padding: 10px;
+  text-align: left;
+}
+p.status-message{
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 30px;
+  color: white;
+}
+
+.overflow-3{
+  @include ovf(3);
+}
+
+.overflow-2{
+  @include ovf(2);
+}
